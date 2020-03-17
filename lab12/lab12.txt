@@ -1,0 +1,20 @@
+Question 1: Describe the errors that occur when trying to assemble lab12.asm. Identify the cause of each error.
+Ln 14: The opcode for the first command is missing.
+Ln 16: The first command must be .ORIG; the program can't start with an LD command. 
+Ln 17: The offset is supposed to be 9 bits, not 16. All you put is offset, not actual address.
+Ln 19: There were 2 commas after the first operand, causing LC3 to think the operands are illegal.
+Ln 30: The offset is supposed to be 9 bits, not 16. All you put is offset, not actual address.
+Ln 32: BRpz was used instead of BRzp. This mistake caused label OUTERLOOP to be misinterpreted. 
+Ln 35: The offset is supposed to be 9 bits, not 16. All you put is offset, not actual address.
+Ln 43: The .END command is missing. 
+
+Question 2: For each label in the code, write down the corresponding memory location. 
+OUTERLOOP         x3004
+INNERLOOP         x3005
+INPUT             x300E
+ZERO              x300F
+NEG               x3010
+ANS               x3011
+
+Question 3: Between using labels and explicit memory locations/offsets, which one makes the most sense, and why?
+It makes more sense to use labels because the label will refer to a specific address, which is easier for you to keep track of. The offset will be computed automatically, which saves you trouble and makes it a lot easier to move lines of code around, since you won't have to recompute the new offset yourself. 

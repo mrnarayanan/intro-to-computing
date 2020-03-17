@@ -1,0 +1,5 @@
+The topology your circuit is topology number 3 
+
+Your gate1 is XOR.
+Your gate2 is XNOR.
+Your gate3 is XNOR.

@@ -1,0 +1,5 @@
+Please print out function F in SOP
+
+The variables are: E J L O
+
+The function is F(E,J,L,O) = (E' + J + L' + X)(E + L' + O + X')(J + L + O' + X')

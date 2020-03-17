@@ -1,0 +1,23 @@
+You should take 4 integers (x,y,j,k) as your input variables.
+
+
+The three constraints are defined here:
+
+The circle C is defined by the equation: x*x + y*y = 5*5
+Line G is defined by the equation: -16x + -12y = 0
+Line H is defined by the equation: -7x + 10y = 17
+
+
+
+Your function F is specified here:
+
+If the point (x,y) lies below the line H,
+calculate and print the value of the following polynomial:
+(51*y)+(-5*x)+(9*j)
+
+Otherwise if the point (x,y) lies outside the circle C,
+calculate and print the value of the following polynomial:
+(80*k)+(17*j)+(-54*y)
+
+Otherwise,
+calculate and print the sum from 1 to the absolute value of k of i^3 * j

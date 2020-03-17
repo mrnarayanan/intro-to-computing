@@ -1,0 +1,10 @@
+QUESTION 1.  Read through the program lab10.bin. What do you expect the program to do? More specifically, which register will the program modify when it is run, and what will it contain when the program finishes? (You can probably figure this out merely by reading the comments provided in lab10.bin.)
+
+ANSWER: The program will first clear register R2 by storing bits 0 in it, by ANDing whatever bits were in it with 0. It will then add the number 12 to the bits in R2, and store the result in R2. So, in the end, R2 will hold the number 12 in binary. 
+
+
+QUESTION 2.  Explain in a few sentences why the ability to step through a program (run one instruction at a time) is a very useful tool for debugging a program. Debugging is the process of finding and correcting bugs (or errors) in a program. Hint: Finding a bug is often much more difficult than correcting it.
+
+ANSWER: When stepping through a program, you execute each line one by one. By doing this, you can trace what the program is doing after each command, and you can see which exact line is the cause of the bug in your program. 
+
+

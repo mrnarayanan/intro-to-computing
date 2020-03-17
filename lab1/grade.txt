@@ -1,0 +1,6 @@
+File bar.txt does not exist: -1 point
+File garbage.txt was not removed: -1 point
+File stuff/baz.txt does not exist: -1 point
+File stuff/junk.txt does not exist: -1 point
+File foo.txt was not updated: -1 point
+Total: 0/5

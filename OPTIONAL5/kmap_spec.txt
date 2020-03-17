@@ -1,0 +1,5 @@
+The number of variables of your boolean function is 3
+
+The variables are: A C K
+
+The function is F(A,C,K) = (A' + K + Y')(A + C' + X)(C + K' + X)

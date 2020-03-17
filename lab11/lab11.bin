@@ -1,0 +1,27 @@
+0011 0001 0000 0000 ; x3100 - starting address of the program
+
+; Murugan Narayanan
+; 11/08/2016
+; This program adds up to 10 numbers, adding if positive and skipping if negative
+; Key features are a branch that skips the adding step if number is negative
+; and branch that checks if counter reached 0. If counter != 0, then jump to start of loop
+
+; R0 will hold value for PC to go to when repeating loop (to go back to start of loop)
+; R2 will hold number at memory address from R3
+; R3 will hold memory address of number to add
+; R4 will hold counter value decreasing from 10
+; R5 will hold final sum
+; R6 will hold constant -1 to decrement counter
+
+0001 100 100 1 01010 ; R4 <- R4 + 01010 Initializing R4 from 0 to hold 10
+1001 110 110 111111 ; R6 <- NOT R6 	Initializing R6 from 0 to -1 (NOT x0000 = xFFFF)
+1110 011 000101111 ; R3 <- PC + 47 	R3 set to x3132 by offsetting x3103 + x29 (start of data array)
+1110 000 000000000 ; R0 <- PC + 0 	R0 set to next instruction, where PC must jump to repeat loop
+0110 010 011 000000 ; R2 <- M[R3 + 0]	Loads value at memory address from R3 into R2 (start of loop)
+0000 100 000000001 ; BRn PC <- PC + 1 	If R2 had negative value, skip 1 step
+0001 101 101 0 00 010 ; R5 <- R5 + R2 	Adds value from R2 to R5 and stores in R5
+0001 011 011 1 00001 ; R3 <- R3 + 1 	Adds 1 to R3 to go to next memory location of data
+0001 100 100 0 00 110 ; R4 <- R4 + R6 	Decrements counter R4 by 1 by adding -1 (from R6) to it
+0000 010 000000001 ; BRz PC <- PC + 1 	If counter R4 now is zero, skip 1 step
+1100 000 000 000000 ; PC <- R0 		Jumps back to start of loop
+1111 0000 0010 0101 ; 			Halt

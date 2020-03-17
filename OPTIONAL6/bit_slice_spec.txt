@@ -1,0 +1,7 @@
+You should compare two unsigned numbers, beginning with the least significant bits.  
+
+The 2-bit representation used for your result is (in decimal):
+ < : 2
+ = : 3
+ > : 1
+

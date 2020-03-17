@@ -1,0 +1,94 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/mrn2/ece120/lab6/lab6/lab6_lib/work
+T_opt
+V7JT6b9aAUAEXaAH[e9FGP0
+04 10 6 work vm_circuit struct 1
+=1-a0d3c127438b-57f40495-e74b7-4f6a
+Z1 o-quiet +acc -auto_acc_if_foreign -work lab6_lib -L lab6_lib
+n@_opt
+Z2 OE;O;10.1d;51
+Z3 d/home/mrn2/ece120/lab6/lab6/lab6_lib/work
+T_opt1
+Vo=Z8I1NFQgc0imJ4`mXBi3
+04 15 6 work vm_circuit_beta struct 1
+=1-a0d3c127438b-57f40d63-85de8-5792
+R1
+n@_opt1
+R2
+Evm_circuit
+Z4 w1475609725
+Z5 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z6 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z7 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+R3
+Z8 8/home/mrn2/ece120/lab6/lab6/lab6_lib/hdl/vm_circuit_struct.vhd
+Z9 F/home/mrn2/ece120/lab6/lab6/lab6_lib/hdl/vm_circuit_struct.vhd
+l0
+L13
+Vn1JFZH?^;2hi_lhaIdZoE3
+Z10 OE;C;10.1d;51
+32
+Z11 !s108 1475609726.274622
+Z12 !s90 -work|lab6_lib|-nologo|-f|/tmp/Files0|
+Z13 !s107 /home/mrn2/ece120/lab6/lab6/lab6_lib/hdl/vm_circuit_struct.vhd|
+Z14 o-work lab6_lib -nologo
+Z15 tExplicit 1
+!s100 =DTgFZnNaZ5m1io<gXYOm2
+!i10b 1
+Astruct
+DEx4 work 10 vm_circuit 0 22 n1JFZH?^;2hi_lhaIdZoE3
+R5
+R6
+R7
+l59
+L40
+V75]OY^XTXnXB]RRNMPEjN0
+R10
+32
+R11
+R12
+R13
+R14
+R15
+!s100 ddSM<[6UMdGSZ0ZT:2]JK1
+!i10b 1
+Evm_circuit_beta
+Z16 w1475611994
+R5
+R6
+R7
+R3
+Z17 8/home/mrn2/ece120/lab6/lab6/lab6_lib/hdl/vm_circuit_beta_struct.vhd
+Z18 F/home/mrn2/ece120/lab6/lab6/lab6_lib/hdl/vm_circuit_beta_struct.vhd
+l0
+L13
+VRT4z>B2fHK7;eP20Ldo7G0
+R10
+32
+Z19 !s108 1475611996.459145
+R12
+Z20 !s107 /home/mrn2/ece120/lab6/lab6/lab6_lib/hdl/vm_circuit_beta_struct.vhd|
+R14
+R15
+!s100 V:Zn6XMh^BWLaXK7;Ni7X3
+!i10b 1
+Astruct
+DEx4 work 15 vm_circuit_beta 0 22 RT4z>B2fHK7;eP20Ldo7G0
+R5
+R6
+R7
+l55
+L40
+VbfS`E2gcn]cbXh`eD0fVV0
+R10
+32
+R19
+R12
+R20
+R14
+R15
+!s100 1J6Sha[PnPD2Yn;48=m0I3
+!i10b 1
